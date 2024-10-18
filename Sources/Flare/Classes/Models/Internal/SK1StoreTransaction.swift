@@ -54,6 +54,10 @@ extension SK1StoreTransaction: IStoreTransaction {
         let payment = transaction.skTransaction.payment
         return payment.quantity
     }
+    
+    var appAccountToken: UUID? {
+        nil
+    }
 
     var jwsRepresentation: String? {
         nil

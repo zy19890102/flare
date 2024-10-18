@@ -68,6 +68,10 @@ extension StoreTransaction: IStoreTransaction {
     public var hasKnownTransactionIdentifier: Bool {
         storeTransaction.hasKnownTransactionIdentifier
     }
+    
+    public var appAccountToken: UUID? {
+        storeTransaction.appAccountToken
+    }
 
     public var quantity: Int {
         storeTransaction.quantity

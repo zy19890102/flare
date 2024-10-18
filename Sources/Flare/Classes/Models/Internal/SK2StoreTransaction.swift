@@ -58,6 +58,10 @@ extension SK2StoreTransaction: IStoreTransaction {
     var quantity: Int {
         transaction.purchasedQuantity
     }
+    
+    var appAccountToken: UUID? {
+        transaction.appAccountToken
+    }
 
     var jwsRepresentation: String? {
         _jwsRepresentation

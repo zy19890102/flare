@@ -42,6 +42,12 @@ final class StoreTransactionStub: IStoreTransaction {
     var quantity: Int {
         stubbedQuantity
     }
+    
+    var stubbedAppAccountToken: UUID!
+    
+    var appAccountToken: UUID? {
+        stubbedAppAccountToken
+    }
 
     var stubbedJwsRepresentation: String!
 

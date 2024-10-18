@@ -66,6 +66,16 @@ final class StoreTransactionMock: IStoreTransaction {
         invokedQuantityGetterCount += 1
         return stubbedQuantity
     }
+    
+    var invokedAppAccountTokenGetter = false
+    var invokedAppAccountTokenGetterCount = 0
+    var stubbedJAppAccountToken: UUID!
+
+    var appAccountToken: UUID? {
+        invokedAppAccountTokenGetter = true
+        invokedAppAccountTokenGetterCount += 1
+        return stubbedJAppAccountToken
+    }
 
     var invokedJwsRepresentationGetter = false
     var invokedJwsRepresentationGetterCount = 0

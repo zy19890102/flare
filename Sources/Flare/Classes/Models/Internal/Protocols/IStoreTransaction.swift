@@ -19,6 +19,8 @@ protocol IStoreTransaction {
     var hasKnownTransactionIdentifier: Bool { get }
     /// The quantity of the product involved in the transaction.
     var quantity: Int { get }
+    /// app account token
+    var appAccountToken: UUID? { get }
 
     /// The raw JWS representation of the transaction.
     ///
